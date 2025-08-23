@@ -1,0 +1,158 @@
+/* resetting every elements to 0 for padding and margin  */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* setting up defautlts for root element*/
+html{
+   font-size:16px;
+   color:white;
+   background-color: black;
+   font-family: sans-serif;
+}
+
+/* styling background  */
+.background{
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient( at 900px 300px,transparent 20%,rgb(0, 0, 0) 100%);
+    object-fit: fill;
+     
+}
+
+/* background image */
+#background-image{
+    position:absolute;
+    filter:brightness(50%) ;
+    z-index:-1;
+    object-fit:cover;
+    object-position: 0px -15px;
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+}
+
+
+/* styling header section */
+
+.header{
+    height:120px;
+    padding:0px 148px ;
+}
+
+.header-inner-1{
+    height:88px;
+}
+
+header{
+    width:inherit;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo container .logo */
+.logo{
+  width:30vw;
+  display:inline flex;
+  justify-content: start;
+  align-items: center;
+  
+}
+
+
+/* styling logo */
+
+#NetflixLogo{
+    width:148px;
+    height:40px;
+    
+}
+
+
+/* styling nav  */
+
+.nav{
+width:70vw;
+height:38px;
+display:inline flex;
+justify-content: end;
+align-items: center;
+
+}
+
+nav{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap:8px;
+    
+}
+
+
+/* styling language select and sign up link  */
+
+/* language select */
+.lang{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(237, 233, 233, 0.336);
+    border-radius: 5px;
+    padding: 6px 10px;
+    gap: 10px;
+    
+
+}
+nav #logo-language{
+    width:16px;
+    height:16px;
+}
+
+#english-language{
+    font-family: sans-serif;
+    color:black;
+}
+#hindi-language{
+    /* font-family:  */
+    color:black
+}
+
+#language-select{
+    background-color: transparent;
+    color:white;
+    border:none;
+    font-weight: 535;
+    font-size: 1rem;
+    appearance: none;
+}
+
+/* signin button /link */
+.signin{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    font-size: 1rem;
+    font-weight: 350;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+/* styling main hero  section */
+
+
+
+
+
+
+
+/* styling footer section */
