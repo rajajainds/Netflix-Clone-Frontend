@@ -4,8 +4,6 @@
     margin: 0;
 }
 
-
-
 /* setting up defautlts for root element*/
 html{
    font-size:16px;
@@ -20,7 +18,9 @@ html{
     height: 100vh;
     background: radial-gradient( at 900px 300px,transparent 20%,rgb(0, 0, 0) 100%);
     object-fit: fill;
-     
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
 }
 
 /* background image */
@@ -146,13 +146,108 @@ nav #logo-language{
 
 
 
-
 /* styling main hero  section */
+.intro{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
+    padding:0px 32px 32px;
+    width:100vw;
+    height:900px;
+    box-sizing: border-box;
+}
 
 
+/* heading of intro main section  and their sizes color*/
+#heading-inner-1{
+    font-size: 56px;
+    color:white;
+    text-align: center;
+    font-weight: 800;
+    line-height:68px ;
+    padding-bottom: 20px;
+}
 
+#heading-inner-2{
+    font-size: 20px;
+    font-weight: 540;
+    padding-bottom: 20px;
+}
 
+#heading-inner-3{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px;
 
+}
+
+.content{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    width:600px;
+}
+
+/* section containg signup field and button */
+
+.inputfield{
+    width:600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap:10px
+}
+
+/* input field for email address for sign up */
+#signup-email{
+    background-color: rgba(21, 19, 19, 0.85);
+    width:60%;
+    height:50px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: none;
+    border:1px solid rgb(98, 93, 93);
+    outline: none;
+    cursor: text;
+    padding-left: 15px;
+    font-size: 16px;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    
+    
+
+}
+
+#signup-email:focus{
+    outline-offset: 2px;
+  outline:2px solid white;
+}
+
+#signup-email::placeholder{
+    color:#bbb;
+    font-size: 16px;
+
+}
+#get-started-btn{
+    background-color: rgba(255, 0, 0, 0.902);
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    width:35%;
+    height:56px;
+    color:white;
+    padding:5px;
+    font-weight: 200;
+    box-shadow: none;
+    border:none;
+    
+}
 
 
 /* styling footer section */
