@@ -304,18 +304,166 @@ nav #logo-language{
 
 
 
-/* sttyling main hero section */
-
-.trending-heading{
-    font-size: 1rem;
-    font-weight: 100;
-    color:white;
+/* styling lower section  */
+.lower-section{
+    width:100%;
+    min-height:100vh;
+    padding:0px 22vh;
+    display:flex;
+    flex-wrap: column;
+    flex-direction: column;
+    position:relative;
+    top:-65px;
     
 }
 
 
+/* sttyling main hero section */
+
+.trending-heading{
+    position:relative;
+    font-size: 1rem;
+    font-weight: 50;
+    color:white;
+    z-index:4;
+}
+
+.trending-heading>h2{
+    font-weight: 50;
+}
 
 
+/* movie cards carousel */
+main{
+    width:inherit;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+   
+}
+
+.movie-cards{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position:relative;
+}
+
+
+.movie-cards-2{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    padding:1rem 0px;
+    box-sizing: content-box;
+}
+
+.movie-cards-list{
+    width:140rem;
+    list-style-type:none;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    overflow-y: visible;
+
+}
+
+.cards{
+    width:11.25rem;
+    height:15.75rem;
+    padding:0.375rem 1.375rem;
+    box-sizing: content-box;
+    border-radius: 5px;
+    transition:transform 0.3s;
+    z-index:2;
+}
+
+.cards:hover{
+    transform:scale(1.1);
+    z-index:2;
+}
+
+
+.cards *{
+    width:100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+/* each card behave as a button not hyper link */
+.card-buttons{
+background-color: black;
+border:none;
+
+}
+
+.card-buttons-division{
+    background-color: black;
+    position:relative;
+}
+
+.poster{
+    display:block;
+}
+
+.card-numberings{
+    display:inline-block;
+    width:3rem;
+    height:7rem;
+    position:absolute;
+    bottom:0rem;
+    left:-1.25rem;
+    z-index:1;
+  
+}
+
+.card-numberings-2{
+    display:inline-block;
+    width:inherit;
+    height: inherit;
+    font-size: 6.5rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 0.1rem white;
+    text-shadow:0 0 1.5rem rgba(0,0,0,0.5);
+}
+
+
+/* carousel scrolling buttons */
+
+.left-scroll-button,.right-scroll-button{
+    height:100%;
+    width:30px;
+    position:absolute;
+    z-index:4;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+   
+}
+
+.left-scroll-button{
+    left:-2rem;
+}
+
+.right-scroll-button{
+    right:-2rem;
+}
+
+.left-scroll-button >button,.right-scroll-button >button{
+    width: inherit;
+    background-color:rgba(62, 60, 60, 0.5);
+    border:none;
+    height:8rem;
+    border-radius: 20px;
+    padding:5px;
+    box-sizing: content-box;
+}
 
 
 /* styling footer section */
+
