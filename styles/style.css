@@ -365,6 +365,7 @@ main{
     padding:1rem 0px;
     box-sizing: content-box;
     overflow-y:hidden;
+    scroll-behavior: smooth;
 }
 
 .movie-cards-list{
@@ -374,6 +375,7 @@ main{
     display:flex;
     flex-direction: row;
     flex-wrap:nowrap;
+    scroll-behavior: smooth;
 
 }
 
@@ -385,6 +387,8 @@ main{
     border-radius: 5px;
     transition:transform 0.3s;
     z-index:2;
+
+
 }
 
 .cards:hover{

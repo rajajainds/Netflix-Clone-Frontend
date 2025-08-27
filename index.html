@@ -8,6 +8,14 @@
     <link rel="shortcut icon" href="/assets/NetflixFav.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
 
+    <!-- a little scrolling with javascript -->
+ <script>
+    function scrollCarousel(direction) {
+      const carousel = document.getElementById('carousel-div');
+      const scrollAmount = 220; // card width + gap
+      carousel.scrollLeft += direction * scrollAmount;
+    }
+  </script>
 
 
 </head>
@@ -121,17 +129,21 @@
 
              <!-- movies cards -->
             <div class="movie-cards">
-               <!-- carousel scrolling buttons -->
-            <div class="left-scroll-button">
-              <button><div>
-                 <img src="/assets/NetflixArrow.svg" alt=">" style="width:20px;height:20px;transform:rotateY('180')" />
-              </button>
-              </div>
+              
 
 
 
               <!-- movie cards  -->
-              <div class="movie-cards-2">
+              <div class="movie-cards-2" id="carousel-div">
+
+                 <!-- carousel scrolling buttons -->
+            <div class="left-scroll-button">
+              <button onclick="scrollCarousel(-1)">
+                 <div>
+                 <img src="/assets/NetflixArrow.svg" alt=">" style="width:20px;height:20px;transform:rotateY(180deg)" />
+                 </div>
+              </button>
+            </div>
 
             <ul class="movie-cards-list">
               <!-- card 1 -->
@@ -342,16 +354,19 @@
               
             </ul>
 
+             <!-- carousel scrolling buttons -->
+            <div class="right-scroll-button">
+              <button onclick="scrollCarousel(1)">
+              <div>
+                 <img src="/assets/NetflixArrow.svg" alt=">" style="width:20px;height:20px;" />
+              </div>
+                </button>
+              </div>
+
             </div>
 
 
-            <!-- carousel scrolling buttons -->
-            <div class="right-scroll-button">
-              <button><div>
-                 <img src="/assets/NetflixArrow.svg" alt=">" style="width:20px;height:20px;" />
-              </button>
-              </div>
-              
+                 
 
             </div>
           </div>
@@ -668,6 +683,7 @@
 
 
   </div>
+
 
 
 </body>
