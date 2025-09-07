@@ -27,7 +27,7 @@ A simple begineer friendly practice project for basics icluding HTML CSS concpts
 - Demonstrates the responsiveness of a webpage
 
 ## 💻 Live -Demo
-LIve -Demo : https://netflix-clone-frontend-rgx6ru2lc-rajajainds.vercel.app/
+LIve -Demo : https://netflix-clone-frontend-bice.vercel.app/
 
 
 ## ⚙️ Installation
