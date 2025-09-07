@@ -11,6 +11,7 @@ Netflix Frontend Clone  is a cloned  frontend  of Netflix India website .It cons
   - [📌 Table of Contents](#-table-of-contents)
   - [📖 About](#-about)
     - [✨ Features](#-features)
+  - [💻 Live -Demo](#-live--demo)
   - [⚙️ Installation](#️-installation)
   - [🖼 Screenshots](#-screenshots)
   - [🤝 Contributing](#-contributing)
@@ -24,6 +25,9 @@ A simple begineer friendly practice project for basics icluding HTML CSS concpts
 - It is simple
 - Demonstration of how the complex designs are craeted using the basic HTML and CSS or desinging .
 - Demonstrates the responsiveness of a webpage
+
+## 💻 Live -Demo
+LIve -Demo : https://netflix-clone-frontend-rgx6ru2lc-rajajainds.vercel.app/
 
 
 ## ⚙️ Installation
